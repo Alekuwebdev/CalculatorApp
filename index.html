@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calcolatrice</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="calc" role="application" aria-label="Calcolatrice">
+      <div class="display">
+        <div class="history" id="history" aria-hidden="false"></div>
+        <div id="output" role="status" aria-live="polite">0</div>
+      </div>
+
+      <div class="keys">
+        <button type="button" data-action="clear">C</button>
+        <button type="button" data-action="back">⌫</button>
+        <button type="button" data-action="percent">%</button>
+        <button type="button" class="btn-operator" data-value="/">÷</button>
+
+        <button type="button" data-value="7">7</button>
+        <button type="button" data-value="8">8</button>
+        <button type="button" data-value="9">9</button>
+        <button type="button" class="btn-operator" data-value="*">×</button>
+
+        <button type="button" data-value="4">4</button>
+        <button type="button" data-value="5">5</button>
+        <button type="button" data-value="6">6</button>
+        <button type="button" class="btn-operator" data-value="-">−</button>
+
+        <button type="button" data-value="1">1</button>
+        <button type="button" data-value="2">2</button>
+        <button type="button" data-value="3">3</button>
+        <button type="button" class="btn-operator" data-value="+">+</button>
+
+        <button type="button" class="btn-wide" data-value="0">0</button>
+        <button type="button" data-value=".">.</button>
+        <button type="button" class="btn-eq" data-action="equals">=</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
